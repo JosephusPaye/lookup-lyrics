@@ -1,0 +1,38 @@
+{
+  "name": "@josephuspaye/lookup-lyrics",
+  "version": "0.0.0",
+  "description": "Lookup lyrics of songs using online sources.",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "repository": "https://github.com/JosephusPaye/lookup-lyrics.git",
+  "author": "Josephus Paye II",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "uvu -r esm tests/",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.js\" \"*.{js,json,md}\"",
+    "format:check": "prettier --list-different \"src/**/*.ts\" \"tests/**/*.js\" \"*.{js,json,md}\""
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "httpie": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.22",
+    "esm": "^3.2.25",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3",
+    "uvu": "^0.3.4"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true
+  }
+}
