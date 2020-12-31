@@ -1,6 +1,6 @@
 {
   "name": "@josephuspaye/lookup-lyrics",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Lookup lyrics of songs using online sources",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
